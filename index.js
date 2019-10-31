@@ -12,6 +12,6 @@ app.use(cors({credentials: true}))
 app.post('/calories', require('./controllers/postCalories'))
 
 
-app.listen(process.env.PORT, () => {
-	console.log(`Ready on port ${process.env.PORT}`);
+app.listen(4000, () => {
+	console.log('Ready on port 4000');
 })
