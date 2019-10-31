@@ -12,7 +12,7 @@ module.exports = (req, res) => {
 
 
 	if (req.body.activityLevel === 'low') {
-		totalDailyCalorieNeeds = bmr * 1.375
+		totalDailyCalorieNeeds = bmr * 1.2
 		console.log('>>>>>>>>>>', totalDailyCalorieNeeds)
 	} else if (req.body.activityLevel === 'mid') {
 		totalDailyCalorieNeeds = bmr * 1.375
