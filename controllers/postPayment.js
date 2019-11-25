@@ -10,7 +10,7 @@ module.exports = (req,res) => {
 		service:'gmail',
 		auth:{
 			user:'joshuajoneslive@gmail.com',
-			pass:'$hreddedandJacked1'
+			pass:`${process.env.PASSWORD}`
 		}
 	})
 
