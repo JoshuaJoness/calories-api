@@ -9,8 +9,6 @@ module.exports = (req, res) => {
 		bmr = 66 + (6.23 * req.body.weight) + (12.7 * req.body.totalInches) - (6.8 * req.body.age)
 	}
 
-
-
 	if (req.body.activityLevel === 'low') {
 		totalDailyCalorieNeeds = bmr * 1.2
 		console.log('>>>>>>>>>>', totalDailyCalorieNeeds)
@@ -21,7 +19,6 @@ module.exports = (req, res) => {
 	}
 
 	let maintain = JSON.stringify(totalDailyCalorieNeeds)
-
 
 	res.send({maintain})
 }
